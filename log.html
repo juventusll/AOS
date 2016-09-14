@@ -5,23 +5,41 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>AOS+</title>
 
-    <title>H+ 后台主题UI框架 - 数据表格</title>
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <meta name="keywords" content="自动上线系统">
+    <meta name="description" content="Aoto On-line System">
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
     <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
 
     <!-- Data Tables -->
     <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
 
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
 
 </head>
-
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
@@ -29,10 +47,6 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>日志 <small>信息</small></h5>
-                        <div class="ibox-tools">
-                        	<a href="productline.html#"><i class="fa fa-plus"></i></a>
-                            <a href="productline.html#"><i class="fa fa-external-link"></i></a>
-                        </div>
                     </div>
                     <div class="ibox-content">
 
@@ -47,120 +61,61 @@
                             </thead>
                             <tbody>
                                 <tr class="gradeX">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 4.0
-                                    </td>
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
                                     <td>Win 95+</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                    <td>INFO</td>
                                 </tr>
-                                <tr class="gradeC">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.0
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
                                     <td>Win 95+</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                    <td>DEBUG</td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.5
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
                                     <td>Win 95+</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                    <td>INFO</td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 6
-                                    </td>
-                                    <td>Win 98+</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
+                                    <td>Win 95+</td>
+                                    <td>INFO</td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 7</td>
-                                    <td>Win XP SP2+</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
+                                    <td>Win 95+</td>
+                                    <td>INFO</td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>AOL browser (AOL desktop)</td>
-                                    <td>Win XP</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
+                                    <td>Win 95+</td>
+                                    <td>WARNING</td>
                                 </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
+                                    <td>Win 95+</td>
+                                    <td>INFO</td>
                                 </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
+                                    <td>Win 95+</td>
+                                    <td>INFO</td>
                                 </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs"style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
+                                <tr class="gradeX">
+                                    <td>2016-09-14 15:20:40</td>
+                                    <td>tuanhui</td>
+                                    <td>Win 95+</td>
+                                    <td>INFO</td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
                 </div>
             </div>
