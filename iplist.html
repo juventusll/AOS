@@ -5,17 +5,34 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>AOS+</title>
 
-    <title>H+ 后台主题UI框架 - 数据表格</title>
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <meta name="keywords" content="自动上线系统">
+    <meta name="description" content="Aoto On-line System">
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
     <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
 
     <!-- Data Tables -->
     <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
 
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
@@ -28,139 +45,160 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>产品线 <small>管理</small></h5>
+                        <h5>IP分组<small>管理</small></h5>
                         <div class="ibox-tools">
-                        	<a href="productline.html#"><i class="fa fa-plus"></i></a>
-                            <a href="productline.html#"><i class="fa fa-external-link"></i></a>
+                        	<a data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></a>
                         </div>
                     </div>
                     <div class="ibox-content">
-
                         <table class="table table-striped table-bordered table-hover dataTables-example">
                             <thead>
                                 <tr>
                                     <th>分组名称</th>
                                     <th>产品线</th>
                                     <th>IP列表</th>
-                                    <th>操作</th>        
+                                    <th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="gradeX">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 4.0
+                                    <td>aaaa</td>
+                                    <td>Internet Explorer 4.0</td>
+                                    <td>
+                                        <li style="list-style-type:none;">10.13.88.10</li>
+                                        <li style="list-style-type:none;">10.13.88.11</li>
+                                        <li style="list-style-type:none;">10.13.88.12</li>
+                                        <li style="list-style-type:none;">10.13.88.13</li>
+                                        <li style="list-style-type:none;">10.13.88.14</li>
                                     </td>
-                                    <td>Win 95+</td>
                                     <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px" data-toggle="modal" data-target="#myModal">编辑</button>
+                                    	<button type="button" class="btn btn-outline btn-danger btn-xs demo3" style="margin-bottom:0px">删除</button>
                                     </td>
                                 </tr>
-                                <tr class="gradeC">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.0
+                                <tr class="gradeX">
+                                    <td>aaaa</td>
+                                    <td>Internet Explorer 4.0</td>
+                                    <td>
+                                        <li style="list-style-type:none;">10.13.88.10</li>
+                                        <li style="list-style-type:none;">10.13.88.11</li>
+                                        <li style="list-style-type:none;">10.13.88.12</li>
+                                        <li style="list-style-type:none;">10.13.88.13</li>
+                                        <li style="list-style-type:none;">10.13.88.14</li>
                                     </td>
-                                    <td>Win 95+</td>
                                     <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px" data-toggle="modal" data-target="#myModal">编辑</button>
+                                    	<button type="button" class="btn btn-outline btn-danger btn-xs demo3" style="margin-bottom:0px">删除</button>
                                     </td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.5
+                                <tr class="gradeX">
+                                    <td>aaaa</td>
+                                    <td>Internet Explorer 4.0</td>
+                                    <td>
+                                        <li style="list-style-type:none;">10.13.88.10</li>
+                                        <li style="list-style-type:none;">10.13.88.11</li>
+                                        <li style="list-style-type:none;">10.13.88.12</li>
+                                        <li style="list-style-type:none;">10.13.88.13</li>
+                                        <li style="list-style-type:none;">10.13.88.14</li>
                                     </td>
-                                    <td>Win 95+</td>
                                     <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px" data-toggle="modal" data-target="#myModal">编辑</button>
+                                    	<button type="button" class="btn btn-outline btn-danger btn-xs demo3" style="margin-bottom:0px">删除</button>
                                     </td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 6
+                                <tr class="gradeX">
+                                    <td>aaaa</td>
+                                    <td>Internet Explorer 4.0</td>
+                                    <td>
+                                        <li style="list-style-type:none;">10.13.88.10</li>
+                                        <li style="list-style-type:none;">10.13.88.11</li>
+                                        <li style="list-style-type:none;">10.13.88.12</li>
+                                        <li style="list-style-type:none;">10.13.88.13</li>
+                                        <li style="list-style-type:none;">10.13.88.14</li>
                                     </td>
-                                    <td>Win 98+</td>
                                     <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 7</td>
-                                    <td>Win XP SP2+</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px" data-toggle="modal" data-target="#myModal">编辑</button>
+                                    	<button type="button" class="btn btn-outline btn-danger btn-xs demo3" style="margin-bottom:0px">删除</button>
                                     </td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Trident</td>
-                                    <td>AOL browser (AOL desktop)</td>
-                                    <td>Win XP</td>
+                                <tr class="gradeX">
+                                    <td>aaaa</td>
+                                    <td>Internet Explorer 4.0</td>
+                                    <td>
+                                        <li style="list-style-type:none;">100.13.88.10</li>
+                                        <li style="list-style-type:none;">100.13.88.11</li>
+                                        <li style="list-style-type:none;">100.13.88.12</li>
+                                        <li style="list-style-type:none;">100.13.88.13</li>
+                                        <li style="list-style-type:none;">100.13.88.14</li>
+                                    </td>
                                     <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px" data-toggle="modal" data-target="#myModal">编辑</button>
+                                    	<button type="button" class="btn btn-outline btn-danger btn-xs demo3" style="margin-bottom:0px">删除</button>
                                     </td>
                                 </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                <tr class="gradeX">
+                                    <td>aaaa</td>
+                                    <td>Internet Explorer 4.0</td>
+                                    <td>
+                                        <li style="list-style-type:none;">10.130.88.10</li>
+                                        <li style="list-style-type:none;">10.130.88.11</li>
+                                        <li style="list-style-type:none;">10.130.88.12</li>
+                                        <li style="list-style-type:none;">10.130.88.13</li>
+                                        <li style="list-style-type:none;">10.130.88.14</li>
                                     </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
                                     <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs"style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
-                                    </td>
-                                </tr>
-                                <tr class="gradeC">
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">
-                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px">编辑</button>
-                                    	<button type="button" class="btn btn-outline btn-danger btn-xs" style="margin-bottom:0px">删除</button>
+                                   		<button type="button" class="btn btn-outline btn-primary btn-xs" style="margin-bottom:0px" data-toggle="modal" data-target="#myModal">编辑</button>
+                                    	<button type="button" class="btn btn-outline btn-danger btn-xs demo3" style="margin-bottom:0px">删除</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
+                        <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="ibox float-e-margins" style="margin-bottom:0px">
+                                        <div class="ibox-title">
+                                            <h5>添加IP分组</h5>
+                                            <div class="ibox-tools">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="ibox-content" style="padding-top: 0px">
+                                            <form class="form-horizontal m-t" id="commentForm">
+                                                <div class="form-group">
+                                                        <label class="col-sm-3 control-label">IP分组名称</label>
+                                                    <div class="col-sm-7">
+                                                        <input id="cname" name="name" type="text" class="form-control" required="" aria-required="true">
+                                                    </div>
+                                                </div>
+                                                <div class="hr-line-dashed"></div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">所属产品线</label>
+                                                    <div class="col-sm-7">
+                                                        <input id="cname1" name="name1" type="text" class="form-control" required="" aria-required="true">
+                                                    </div>
+                                                </div>
+                                                <div class="hr-line-dashed"></div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">IP列表</label>
+                                                    <div class="col-sm-7">
+                                                        <textarea rows="5" cols="50" class="form-control"></textarea><span class="help-block"><i class="fa fa-info-circle"></i>多IP请换行</span>
+                                                    </div>
+                                                </div>
+                                                <div class="hr-line-dashed"></div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-6 col-sm-offset-3">
+                                                        <button class="btn btn-primary" type="submit">保存</button>
+                                                        <button class="btn btn-white" type="button" data-dismiss="modal">取消</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,11 +210,30 @@
     <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
     <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
     <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/contabs.min.js"></script>
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="js/plugins/validate/messages_zh.min.js"></script>
+    <script src="js/demo/form-validate-demo.min.js"></script>
     <script>
         $(document).ready(function(){$(".dataTables-example").dataTable();var oTable=$("#editable").dataTable();oTable.$("td").editable("../example_ajax.php",{"callback":function(sValue,y){var aPos=oTable.fnGetPosition(this);oTable.fnUpdate(sValue,aPos[0],aPos[1])},"submitdata":function(value,settings){return{"row_id":this.parentNode.getAttribute("id"),"column":oTable.fnGetPosition(this)[2]}},"width":"90%","height":"100%"})});function fnClickAddRow(){$("#editable").dataTable().fnAddData(["Custom row","New row","New row","New row","New row"])};
     </script>
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
-
+    <script>
+        $('.demo3').click(function () {
+            swal({
+                title: "您确定要删除这条信息吗?",
+                text: "",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#ED5565",
+                confirmButtonText: "删除",
+                cancelButtonText: "取消",
+                closeOnConfirm: false,
+            }, function () {
+                swal("删除成功！", "", "success");
+            });
+        });
+    </script>
 </body>
 
 </html>
