@@ -404,7 +404,7 @@
 
     <script src="js/plugins/toastr/toastr.min.js"></script>
     <script type="text/javascript">
-            $(function() {
+        $(document).ready(function() {
             var i = -1;
             var toastCount = 0;
             var $toastlast;
@@ -486,15 +486,6 @@
                     })
                 }
             });
-            function getLastToast() {
-                return $toastlast
-            }
-            $("#clearlasttoast").click(function() {
-                toastr.clear(getLastToast())
-            });
-            $("#cleartoasts").click(function() {
-                toastr.clear()
-            })
         });
     </script>
     <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
